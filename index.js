@@ -1,22 +1,27 @@
-// Muestra una alerta con el mensaje "¡Bienvenida y bievenido a nuestro sitio web!".
-alert("¡Bienvenida y bievenido a nuestro sitio web!");
-// Declara una variable llamada nombre y asígnale el valor "Luna".
-let nombre = "Luna";
-// Crea una variable llamada edad y asígnale el valor 25.
-let edad = 25;
-// Establece una variable numeroDeVentas y asígnale el valor 50.
-let numeroDeVentas = 50;
-// Establece una variable saldoDisponible y asígnale el valor 1000.
-let saldoDisponible = 1000;
-// Muestra una alerta con el texto "¡Error! Completa todos los campos".
-alert("¡Error! Completa todos los campos");
-// Declara una variable llamada mensajeDeError y asígnale el valor "¡Error! Completa todos los campos". Ahora muestra una alerta con el valor de la variable mensajeDeError .
-let mensajeDeError = "¡Error! Completa todos los campos";
-// Utiliza un prompt para preguntar el nombre del usuario y almacénalo en la variable nombre .
-nombre = prompt("¿Cuál es tu nombre?");
-// Pide al usuario que ingrese su edad usando un prompt y almacénala en la variable edad.
-edad = prompt("¿Cuál es tu edad?");
-// Ahora, si la edad es mayor o igual a 18, muestra una alerta con el mensaje "¡Puedes obtener tu licencia de conducir!".
-if (edad >= 18) {
-  alert("¡Puedes obtener tu licencia de conducir!");
+// Pregunta al usuario qué día de la semana es. Si la respuesta es "Sábado" o "Domingo", muestra "¡Buen fin de semana!". De lo contrario, muestra "¡Buena semana!".
+let dia = prompt("¿Qué día de la semana es?");
+if (dia === "Sábado" || dia === "Domingo") {
+  alert("¡Buen fin de semana!");
+} else {
+  alert("¡Buena semana!");
 }
+// Verifica si un número ingresado por el usuario es positivo o negativo. Muestra una alerta informativa.
+let numero = prompt("Ingrese un número");
+if (numero > 0) {
+  alert(`El número ${numero} es positivo`);
+} else {
+  alert(`El número ${numero} es negativo`);
+}
+// Crea un sistema de puntuación para un juego. Si la puntuación es mayor o igual a 100, muestra "¡Felicidades, has ganado!". En caso contrario, muestra "Intenta nuevamente para ganar.".
+let puntuacion = prompt("Ingrese su puntuación");
+if (puntuacion >= 100) {
+  alert("¡Felicidades, has ganado!");
+} else {
+  alert("Intenta nuevamente para ganar.");
+}
+// Crea un mensaje que informe al usuario sobre el saldo de su cuenta, utilizando un template string para incluir el valor del saldo.
+let saldo = 1000;
+alert(`Su saldo es de $${saldo}`);
+// Pide al usuario que ingrese su nombre mediante un prompt. Luego, muestra una alerta de bienvenida usando ese nombre.
+let nombre = prompt("Ingrese su nombre");
+alert(`Bienvenido ${nombre}`);
